@@ -1,0 +1,30 @@
+@mixin browser($property, $value, $vendors: webkit moz ms o) {
+      @if $vendors {
+        @each $vendor in $vendors {
+          #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+      }
+      #{$property}: #{$value};
+}
+
+$my_color: #BADA55;
+$font-stack : Helvetica, sans-serif;
+$primary-color: #333;
+
+html { 
+	font: 62.5%; 
+}
+
+body {
+	font: 1.4rem $font-stack;
+	color:$primary-color;
+}
+
+nav {
+  a{
+    color: $my_color;
+    &:hover {
+      color: darken($my_color, 10%);
+    }
+  }
+}

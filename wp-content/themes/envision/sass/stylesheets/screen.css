@@ -1,0 +1,19 @@
+/* line 14, ../sass/screen.scss */
+html {
+  font: 62.5%;
+}
+
+/* line 18, ../sass/screen.scss */
+body {
+  font: 1.4rem Helvetica, sans-serif;
+  color: #333;
+}
+
+/* line 24, ../sass/screen.scss */
+nav a {
+  color: #BADA55;
+}
+/* line 26, ../sass/screen.scss */
+nav a:hover {
+  color: #a8cf2d;
+}
